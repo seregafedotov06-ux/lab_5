@@ -5,9 +5,18 @@
 
 using namespace std;
 
-void readFile(string fname, vector<char> s) {
-
+void readFile(const string& fname, vector<string>& s) {
+    ifstream file(fname, ios::binary);
+    if (!file) {
+        cerr << "Ошибка открытия файла!" << endl;
+    }
+    string line;
+    while (getline(file, line)) {
+        s.push_back(line);
+    }
+    file.close();
 };
+
 
 void printStr(vector<char> s) {
 
