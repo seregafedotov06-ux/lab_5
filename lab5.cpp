@@ -37,11 +37,7 @@ void writeStr(const vector<string>& s) {
 int main() {
     vector<string> fStr;
     readFile("tv.txt", fStr);
-    ifstream file(fname, ios::binary);
-    string line;
-    while (getline(file, line)) {
-        s.push_back(line);
-    }
-    file.close();
+    printStr(fStr);
+    writeStr(fStr);;
 };
 
