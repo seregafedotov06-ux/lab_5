@@ -18,17 +18,15 @@ void readFile(const string& fname, vector<string>& s) {
 };
 
 
-void printStr(vector<char> s) {
+void printStr(const vector<string>& s) {
 
 };
 
-void writeStr(vector<char> s) {
+void writeStr(const vector<string>& s) {
 
 };
 
 int main() {
-    vector<char> fStr;
-    readFile("file.txt", fStr);
     printStr(fStr);
     writeStr(fStr);
 }
