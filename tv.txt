@@ -1,0 +1,5 @@
+Al black 20000 32
+A2 silver 25000 36
+A3 gray 30000 42
+A4 black 40000 50
+A5 black 15000 24
